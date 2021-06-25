@@ -77,7 +77,7 @@ knitr::include_graphics("img/twitter4.jpeg")
 
 * Downloading the data
   * Freely available
-  * Accurate
+  * High resolution
   * SST
   * Chlorophyll
   * Oxygen concentration
@@ -93,10 +93,31 @@ class: section-slide-orange
   * A short period of abnormally high temperatures in a sea or ocean
 
 * Started seeing MHW affects along the SA coastline between March - May 2021
+---
+## R package
 
+* Package to produce events dataset
+* Package only requires date and temperature column 
+* Produces a list of events
+---
+## R package
 
-
-
+```{r, echo = FALSE, fig.align = "center", out.width = "100%"}
+knitr::include_graphics("img/event_detect.png")
+```
+---
+## Plotting metrics
+```{r, echo = FALSE, fig.align = "center", out.width = "80%"}
+knitr::include_graphics("img/extremes_distribution.jpg")
+```
+---
+## Plotting metrics
+```{r, echo = FALSE, fig.align = "center", out.width = "100%"}
+knitr::include_graphics("img/combo_flame.jpg")
+```
+---
+class: section-slide-orange
+## Animation
 
 
 

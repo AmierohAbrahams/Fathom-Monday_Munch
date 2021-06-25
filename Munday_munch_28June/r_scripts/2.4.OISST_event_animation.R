@@ -10,7 +10,7 @@ library(doParallel)
 library(colorspace)
 registerDoParallel(cores = 8)
 
-base_URL <- "/Users/ajsmit/MEGA/data/East_Coast_extreme_SST/OISST"
+base_URL <- "East_Coast_extreme_SST/OISST"
 
 hot_files <- list.files(path = base_URL, pattern = "_MHW_protoevents.csv", recursive = TRUE, full.names = TRUE)
 cold_files <- list.files(path = base_URL, pattern = "_MCS_protoevents.csv", recursive = TRUE, full.names = TRUE)
