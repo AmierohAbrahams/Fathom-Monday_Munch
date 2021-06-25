@@ -1,0 +1,134 @@
+/* Colours, Font Sizes, Margins, Line Height */
+:root {
+  /* Colours */
+  --white: #FFFFFF;
+  --black: #121A25;
+  --orange: #FF5534;
+  --purple: #9088FF;
+  --grey: #F2F3F5;
+  /* Font Sizes */
+  --font-size-text: 25px;
+  --font-size-h1-title: 75px;
+  --font-size-h2-title: 50px;
+  --font-size-h3-title: 40px;
+  --font-size-section-h1: 100px;
+  --font-size-section: 50px;
+  /* Margins */
+  --margin-small: 25px;
+  --margin-medium: 50px;
+  --margin-large: 75px;
+  --margin-extra-large: 100px;
+}
+
+/* Text Classes */
+.purple {
+  color: var(--purple);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.extra-bold {
+  font-weight: 900;
+}
+
+/* Text slide (default) */
+.remark-slide-content {
+  background-color: var(--black);
+  background-image: url("img/logo-long.svg");   /* Fathom 'stripes' attached to background */
+  background-size: 100% auto;                   /* Scale size of 'stripes' */
+  background-position: 0% 100%;                 /* Place 'stripes' at bottom of slide */
+  color: var(--grey);
+  font-size: var(--font-size-text);
+}
+
+/* Title Slide */
+.title-slide {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 15pt;
+  font-size: var(--font-size-text);
+}
+
+/* Adjust bottom margin to get correct spacing around h1 on title slide */
+.title-slide h1 {
+  font-size: var(--font-size-h1-title);
+  margin-bottom: var(--margin-large);
+}
+
+/* Adjust bottom margin to get correct spacing around h2 on title slide */
+.title-slide h2 {
+  font-size: var(--font-size-h2-title);
+  margin-top: var(--margin-large);
+  margin-bottom: var(--margin-small);
+}
+
+/* Adjust top margin to get correct spacing around h3 on title slide */
+.title-slide h3 {
+  font-size: var(--font-size-h3-title);
+  margin-top: var(--margin-extra-large);
+}
+
+/* Section slides */
+.section-slide-orange, .section-slide-purple {
+  background-image: none;
+  margin-top: var(--margin-large);
+  word-wrap: normal;
+  font-size: var(--font-size-section);
+  line-height: 50pt;
+  text-align: center;
+  padding: 0;
+}
+
+.section-slide-orange h1, .section-slide-purple h1{
+  line-height: 100pt;
+  margin-top: var(--margin-extra-large);
+  font-size: var(--font-size-section-h1);
+}
+
+.section-slide-orange {
+  background-color: var(--orange);
+}
+
+.section-slide-purple {
+  background-color: var(--purple);
+}
+
+/* Inverse slide */
+.inverse {
+  background-color: var(--grey);
+  background-image: url("img/logo-long.svg");
+  background-size: 100% auto;
+  background-position: 0% 100%;
+  color: var(--black);
+  text-shadow: none;
+  font-size: var(--font-size-text);
+}
+
+.inverse h1, .inverse h2, .inverse h3 {
+  color: var(--black);
+}
+
+/* Remove the footer */
+.no-footer {
+  background-image: none;
+}
+
+.logo {
+  background-image: url(img/icon.png);
+  background-size: 6.75% 12%;
+  background-position: 1% 0%;
+}
+
+/* Change colour of hyperlink text. */
+a, a > code {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+/* Remove slide numbers */
+.remark-slide-number {
+  display: none;
+}

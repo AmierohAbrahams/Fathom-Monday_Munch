@@ -1,0 +1,118 @@
+---
+pagetitle: "Fathom Presentation"
+output:
+  xaringan::moon_reader:
+    css: ["default", "fathom.css", "fathom-fonts.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: title-slide
+
+### Monday munch
+# Extreme events
+
+![](img/logo.svg)
+
+## Amieroh Abrahams
+
+@fathomData
+
+???
+
+* `seal:false` is set in the YAML to override a YAML-generated title page
+
+---
+class: no-footer, logo
+
+# The unknown
+
+```{r, echo = FALSE, fig.align = "center", out.width = "45%"}
+knitr::include_graphics("img/twitter_1.png")
+```
+---
+class: no-footer, logo
+
+# The unknown
+
+```{r, echo = FALSE, fig.align = "center", out.width = "70%"}
+knitr::include_graphics("img/twitter_1.1.png")
+```
+---
+class: no-footer, logo
+
+# The unknown
+
+```{r, echo = FALSE, fig.align = "center", out.width = "60%"}
+knitr::include_graphics("img/twitter2.png")
+```
+---
+class: no-footer, logo
+
+# The unknown
+
+```{r, echo = FALSE, fig.align = "center", out.width = "60%"}
+knitr::include_graphics("img/twitter2.2.png")
+```
+---
+class: no-footer, logo
+
+# The unknown
+
+```{r, echo = FALSE, fig.align = "center", out.width = "70%"}
+knitr::include_graphics("img/twitter3.png")
+```
+---
+# The unknown
+
+```{r, echo = FALSE, fig.align = "center", out.width = "50%"}
+knitr::include_graphics("img/twitter4.jpeg")
+```
+---
+## Detecting
+
+* Downloading the data
+  * Freely available
+  * Accurate
+  * SST
+  * Chlorophyll
+  * Oxygen concentration
+---
+class: section-slide-orange
+## Extreme events
+---
+## Extreme events?
+* Land
+  * A period of excessively hot weather
+  
+* Marine heatwaves (MHW) and marine cold spells (MCS)
+  * A short period of abnormally high temperatures in a sea or ocean
+
+* Started seeing MHW affects along the SA coastline between March - May 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

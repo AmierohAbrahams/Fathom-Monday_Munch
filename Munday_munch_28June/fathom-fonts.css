@@ -1,0 +1,9 @@
+/* Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+/* Body text */
+body { font-family: 'Poppins', sans-serif; }
+
+/* Code text */
+.remark-code, .remark-inline-code { font-family:  'Source Code Pro', monospace; }
