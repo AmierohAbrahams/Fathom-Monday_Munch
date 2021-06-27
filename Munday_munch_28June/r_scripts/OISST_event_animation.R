@@ -1,5 +1,3 @@
-# MUR_event_plot.R
-
 # Setup -------------------------------------------------------------------
 
 library(tidyverse)
@@ -59,7 +57,7 @@ dates <- c("2021-01-02", "2021-01-02")
 anim_plot <- function(data) {
   
   plot <- ggplot() +
-    geom_tile(data = data, aes(x = lon, y = lat, fill = temp - thresh)) +
+    geom_tile(data = data, aes(x = lon, y = lat, fill = temp - thresh)) + # Fill (colours- temprature - thresh)
     get("OISST_AC_layers_zoomed") + # This is the region where the data is collected from
     scale_fill_continuous_diverging(palette = "Blue-Red 3", mid = 0, # Blue represent cool temperatures with red representing high water temperatures
                                     limits = c(-1.9, 4.2), breaks = c(-2, -1, 0, 1, 2, 3, 4)) + # Setting the limits on the y axis
@@ -93,6 +91,7 @@ plt.dat %>%
 # Animate... --------------------------------------------------------------
 
 # animate in the terminal using ffmpeg:
+# ffmpeg creates animations from a series of pictures
 ffmpeg \
 -framerate 5 \
 -pattern_type glob -i 'OISST_*.jpg' \

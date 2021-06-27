@@ -83,7 +83,6 @@ plt.dat %>%
 
 
 # Animate... --------------------------------------------------------------
-
 # animate in the terminal using ffmpeg:
 ffmpeg \
 -framerate 2 \
