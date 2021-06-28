@@ -1,5 +1,5 @@
 # Setup -------------------------------------------------------------------
-
+# Loading libraries
 library(tidyverse)
 library(lubridate)
 library(plyr)
@@ -8,7 +8,7 @@ library(doParallel)
 library(colorspace)
 registerDoParallel(cores = 8)
 
-# Setting a directory path
+# Setting a directory 
 base_URL <- "East_Coast_extreme_SST/OISST"
 
 # Loading the event files (These are the events produced after using the R package)
